@@ -11,4 +11,4 @@ Disallow: /nvopen-tools/cicc/toc.html
 Disallow: /nvopen-tools/cudafe++/toc.html
 Disallow: /nvopen-tools/nvlink/toc.html
 
-Sitemap: https://grigoryevko.github.io/sitemap.xml
+Sitemap: https://gh.evko.io/sitemap.xml

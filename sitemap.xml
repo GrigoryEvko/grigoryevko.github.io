@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://grigoryevko.github.io/landing-sitemap.xml</loc>
+    <loc>https://gh.evko.io/landing-sitemap.xml</loc>
   </sitemap>
   <sitemap>
-    <loc>https://grigoryevko.github.io/nvopen-tools/sitemap.xml</loc>
+    <loc>https://gh.evko.io/nvopen-tools/sitemap.xml</loc>
   </sitemap>
 </sitemapindex>
