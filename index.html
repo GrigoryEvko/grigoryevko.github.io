@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grigory Evko</title>
+    <meta name="description" content="Grigory Evko — compilers, ML runtimes, programming language theory, heterogeneous computer architecture. CTO at TheArtisan.ai.">
+    <link rel="canonical" href="https://grigoryevko.github.io/">
+    <meta property="og:title" content="Grigory Evko">
+    <meta property="og:description" content="Compilers, ML runtimes, programming language theory, heterogeneous computer architecture.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://grigoryevko.github.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Grigory Evko">
+    <meta name="twitter:description" content="Compilers, ML runtimes, programming language theory, heterogeneous computer architecture.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Grigory Evko",
+      "url": "https://grigoryevko.github.io/",
+      "sameAs": [
+        "https://github.com/GrigoryEvko",
+        "https://orcid.org/0000-0001-8566-6204"
+      ],
+      "jobTitle": "CTO & Co-Founder",
+      "worksFor": {"@type": "Organization", "name": "TheArtisan.ai"},
+      "knowsAbout": [
+        "ML Compilers",
+        "Programming Language Theory",
+        "Graded Dependent Types",
+        "Heterogeneous Computer Architecture",
+        "GPU Compilation",
+        "Reverse Engineering"
+      ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grigory Evko</h1>
+        <p class="subtitle">Compilers, ML runtimes, programming language theory, heterogeneous computer architecture</p>
+
+        <p class="lede">CTO &amp; co-founder at <a href="https://theartisan.ai">TheArtisan.ai</a>. Previously bioinformatics at the Institute of Gene Biology, RAS &mdash; pipelines for <a href="https://doi.org/10.1038/s41586-025-09396-y"><em>Nature</em>&nbsp;(2025)</a> and <a href="https://doi.org/10.1038/s42003-023-04853-8"><em>Communications Biology</em>&nbsp;(2023)</a>.</p>
+
+        <h2>Compilers &amp; Verification</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/FX"><strong>FX</strong></a></td>
+                    <td>Compiler and proof assistant built on graded modal type theory. Extension and redesign of F* with 19-dimensional grade vectors (usage, effects, security, protocols, lifetimes, provenance, precision, space &hellip;) checked in a unified algorithm. Lean 4 formalization; extraction to C++26, C, JS, WASM, Rust.</td>
+                    <td><a href="https://github.com/GrigoryEvko/FX"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/crucible"><strong>Crucible</strong></a></td>
+                    <td>Adaptive ML runtime organized around a content-addressed Merkle DAG. Records framework dispatch traces, compiles static execution plans; identical sub-computations reuse kernels across models, runs, and machines. Z3-verified kernel configuration. Independent Lean 4 formalization.</td>
+                    <td><a href="https://github.com/GrigoryEvko/crucible"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/go-brrr"><strong>go-brrr</strong></a></td>
+                    <td>Verified polyglot program analysis. Translates source code into a universal IR that infers graded type information (usage, effects, security labels, session types, ownership) for languages that lack these dimensions. CompCert-style simulation relations prove translation correctness.</td>
+                    <td><a href="https://github.com/GrigoryEvko/go-brrr"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://grigoryevko.github.io/nvopen-tools/"><strong>nvopen-tools</strong></a></td>
+                    <td>Reverse engineering reference for NVIDIA's CUDA compiler toolchain &mdash; cicc, ptxas, cudafe++, nvlink. 545+ pages of reimplementation-grade documentation from static binary analysis (IDA Pro 9.x). Fat-binary toolkit released. Pipeline internals, optimization passes, register allocation, PTX emission.</td>
+                    <td>
+                        <a href="https://grigoryevko.github.io/nvopen-tools/"><span class="badge badge-wiki">Wiki</span></a>
+                        <a href="https://github.com/GrigoryEvko/nvopen-tools"><span class="badge badge-repo">GitHub</span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/z3"><strong>Z3 fork</strong></a></td>
+                    <td>Performance fork of Z3 for FX verification workloads. CaDiCaL-style dual-mode SAT (VMTF/VSIDS adaptive switching), on-the-fly clause strengthening, Swiss-table congruence closure, SInE trigger scoring. Adaptive driver: SPSA+Adam over 8 solver parameters guided by health signals.</td>
+                    <td><a href="https://github.com/GrigoryEvko/z3"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Systems &amp; Tooling</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/symbiotic"><strong>Symbiotic</strong></a></td>
+                    <td>Embedded profiling runtime for Rust. RAII guards diff hardware PMU counters (<code>perf_event</code>) on scope entry/exit. BPF programs feed counters into a mmapable array &mdash; no syscalls on the hot path. Four-level code view correlates Rust&nbsp;source / MIR / LLVM&nbsp;IR / x86 asm via DWARF.</td>
+                    <td><a href="https://github.com/GrigoryEvko/symbiotic"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/vramfs-rs"><strong>vram-fs</strong></a></td>
+                    <td>GPU VRAM-backed temporary filesystem with GPU-accelerated RS(128,120) Reed-Solomon ECC over GF(256). Computed field arithmetic, warp-parallel Estrin evaluation, Berlekamp-Massey with parallel Chien search and Forney correction. Fused verify+refresh kernel.</td>
+                    <td><a href="https://github.com/GrigoryEvko/vramfs-rs"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/llm-tldr"><strong>llm-tldr</strong></a></td>
+                    <td>Context extraction tool for LLM coding assistants. Extracts code structure, traces dependencies, and provides targeted context &mdash; 95% token savings, 155&times; faster queries, 16 languages supported.</td>
+                    <td><a href="https://github.com/GrigoryEvko/llm-tldr"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/Continuous-Claude-v3"><strong>Continuous-Claude</strong></a></td>
+                    <td>Context management for Claude Code. Hooks maintain state via ledgers and handoffs. MCP execution without context pollution. Agent orchestration with isolated context windows.</td>
+                    <td><a href="https://github.com/GrigoryEvko/Continuous-Claude-v3"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/GrigoryEvko/dnp_firmware_updater"><strong>dnp_firmware_updater</strong></a></td>
+                    <td>Firmware updater for DNP DS620A / Citizen CX-02 dye-sublimation photo printers. Reverse-engineered proprietary USB protocol from Windows DLLs via IDA Pro. Handles bootloader reboots, CWD writes, 300/600/610 DPI Premium/Standard dithering tables.</td>
+                    <td><a href="https://github.com/GrigoryEvko/dnp_firmware_updater"><span class="badge badge-repo">GitHub</span></a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Publications</h2>
+
+        <ul>
+            <li><strong>Elementary 3D organization of active and silenced <em>E.&nbsp;coli</em> genome.</strong> A.&nbsp;A.&nbsp;Gavrilov et&nbsp;al. <em>Nature</em>&nbsp;645, 1060&ndash;1070 (2025). <a href="https://doi.org/10.1038/s41586-025-09396-y">10.1038/s41586-025-09396-y</a></li>
+            <li><strong>RNA-DNA interactomes of three prokaryotes uncovered by proximity ligation.</strong> A.&nbsp;A.&nbsp;Gavrilov, <strong>G.&nbsp;S.&nbsp;Evko</strong> et&nbsp;al. <em>Communications Biology</em>&nbsp;6, 473 (2023). <a href="https://doi.org/10.1038/s42003-023-04853-8">10.1038/s42003-023-04853-8</a></li>
+            <li><strong>Di(pyridin-2-yl)amino-substituted 1,10-phenanthrolines and their Ru(II)&ndash;Pd(II) dinuclear complexes.</strong> V.&nbsp;A.&nbsp;Ionova, A.&nbsp;V.&nbsp;Dmitrieva, A.&nbsp;S.&nbsp;Abel, <strong>G.&nbsp;S.&nbsp;Evko</strong> et&nbsp;al. <em>Dalton Transactions</em>&nbsp;53, 17021&ndash;17035 (2024). <a href="https://doi.org/10.1039/D4DT02067G">10.1039/D4DT02067G</a></li>
+        </ul>
+
+        <footer>
+            <a href="https://github.com/GrigoryEvko">GitHub</a> &middot;
+            <a href="https://orcid.org/0000-0001-8566-6204">ORCID</a> &middot;
+            evko{dot}grigory{at}gmail{dot}com
+        </footer>
+    </div>
+</body>
+</html>
