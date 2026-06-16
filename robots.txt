@@ -2,13 +2,17 @@ User-agent: *
 Allow: /
 
 # mdbook internal pages — not real content
-Disallow: /nvopen-tools/ptxas/print.html
-Disallow: /nvopen-tools/cicc/print.html
-Disallow: /nvopen-tools/cudafe++/print.html
-Disallow: /nvopen-tools/nvlink/print.html
-Disallow: /nvopen-tools/ptxas/toc.html
-Disallow: /nvopen-tools/cicc/toc.html
-Disallow: /nvopen-tools/cudafe++/toc.html
-Disallow: /nvopen-tools/nvlink/toc.html
+Disallow: /crucible-notes/ptxas/print.html
+Disallow: /crucible-notes/cicc/print.html
+Disallow: /crucible-notes/cudafe++/print.html
+Disallow: /crucible-notes/nvlink/print.html
+Disallow: /crucible-notes/tileiras/print.html
+Disallow: /crucible-notes/libtpu/print.html
+Disallow: /crucible-notes/ptxas/toc.html
+Disallow: /crucible-notes/cicc/toc.html
+Disallow: /crucible-notes/cudafe++/toc.html
+Disallow: /crucible-notes/nvlink/toc.html
+Disallow: /crucible-notes/tileiras/toc.html
+Disallow: /crucible-notes/libtpu/toc.html
 
 Sitemap: https://gh.evko.io/sitemap.xml
